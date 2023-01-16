@@ -1,0 +1,26 @@
+Usage
+=====
+  scrapy fetch [options] <url>
+
+Fetch a URL using the Scrapy downloader and print its content to stdout. You
+may want to use --nolog to disable logging
+
+Optional Arguments
+==================
+  -h, --help            show this help message and exit
+  --spider SPIDER       use this spider
+  --headers             print response HTTP headers instead of body
+  --no-redirect         do not handle HTTP 3xx status codes and print response
+                        as-is
+
+Global Options
+--------------
+  --logfile FILE        log file. if omitted stderr will be used
+  -L LEVEL, --loglevel LEVEL
+                        log level (default: DEBUG)
+  --nolog               disable logging completely
+  --profile FILE        write python cProfile stats to FILE
+  --pidfile FILE        write process ID to FILE
+  -s NAME=VALUE, --set NAME=VALUE
+                        set/override setting (may be repeated)
+  --pdb                 enable pdb on failure
